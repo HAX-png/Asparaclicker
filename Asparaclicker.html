@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Asperigus clicker</title>
+    </head>
+    <body>
+      <h1 id="header">Welcome to Asparagus clicker, try to get 32 bit int. limit!</h1>
+        <script>
+          document.body.style.backgroundColor = "white";
+              let asparagus = 1;
+              let addon = 1;
+              let multiplier = 1;
+              let addoncost = 100;
+              let hevaddon = 0;
+              let hevmult = 0;
+              let hevaddcost = 500;
+              let hevmultcost = 10000;
+              let formult = multiplier + (hevmult*2)
+              let formadd = addon + (hevaddon*3)
+              let multcost = 1000; //Game's variables
+              let slaves = 0;
+              let slavecost = 5000;
+              let hevslavecost = 50000;
+              let efficency = 0;
+              let efficencytime = 250;
+              let efficencycost = 25000;
+              let harvesttime = 1000;
+              let formformharv = 250*efficency;
+              let formharv = harvesttime-formformharv;
+              let hat = 0;
+              let hatcost = 100000000
+              let augment = `null`
+              let augmentcost= 50000000
+              let historyfucked = 0
+        
+              const caps = 2
+
+  document.write("32 bit int limit is 2,147,483,647, good luck!"+"<br>" + "Ver 9.5.1" + "<br>");
+  let btn = document.createElement("button");
+  let btncred = document.createElement("button");
+  let btnadd = document.createElement("button");
+  let btnmult = document.createElement("button");
+  let btnhevhadd = document.createElement("button");
+  let btnhevmult = document.createElement("button");
+  let btnslave = document.createElement("button");
+  let btnhevslave = document.createElement("button");
+  let btnsave = document.createElement("button");
+  let btnload = document.createElement("button");
+  let btnefficency = document.createElement("button");
+  let btncolorreset = document.createElement("button");
+  let btncolorgray = document.createElement("button");
+  let btncolorpink = document.createElement("button");
+  let btncolorred = document.createElement("button");
+  let btncolorblue = document.createElement("button");
+  let btnpresetcomp = document.createElement("button");
+  let btnpreset2012 = document.createElement("button");
+  let btnrotten = document.createElement("button")
+  let btnbigshot = document.createElement("button")
+  let btnmusic = document.createElement("button")
+  let btnhat = document.createElement("button")
+  let btnaugment = document.createElement("button")
+  let btnlancer = document.createElement("button")
+  let btnroxy = document.createElement("button")
+  let btnhis = document.createElement("button")
+  btn.innerHTML = "Make Asparagus";
+  btncred.innerHTML = "You have " + asparagus + " Asparagus";
+  btnadd.innerHTML = "More bunches: " + addoncost;
+  btnmult.innerHTML = "More More bunches: " + multcost;
+  btnhevhadd.innerHTML = "Better bunches: " + hevaddcost;
+  btnhevmult.innerHTML = "Bestest bunches: " + hevmultcost;
+  btnslave.innerHTML = "Hire slaves: " + slavecost
+  btnhevslave.innerHTML = "hire more slaves: " + hevslavecost
+btnefficency.innerHTML = "Faster slaves: " + efficencycost
+  btnsave.innerHTML = "Save game"
+  btnload.innerHTML = "Load game"
+  btncolorblue.innerHTML = "Make the background blue"
+  btncolorgray.innerHTML = "Make the background gray"
+  btncolorpink.innerHTML = "Make the background pink"
+  btncolorred.innerHTML = "Make the background red"
+  btncolorreset.innerHTML = "Reset the background color"
+  btnpresetcomp.innerHTML = "Make the game into a companion cube"
+  btnpreset2012.innerHTML = "Take a trip to 2012"
+  btnrotten.innerHTML = "Be a little rotten"
+  btnbigshot.innerHTML = "Become a [[BIG SHOT]]"
+  btnmusic.innerHTML = "Enable the music"
+  btnhat.innerHTML = "Buy an old dusty, rusty hat: " + hatcost
+  btnaugment.innerHTML = "Buy some weird gemstone: " + augmentcost
+  btnlancer.innerHTML = "Become the jack of spades"
+  btnroxy.innerHTML = "Overly defend your robotic bird"
+  btnhis.innerHTML = "Fuck with history"
+  document.addEventListener("keydown", function(event) {
+    if (event.keyCode === 13) {
+        asparagus = asparagus - formult - formadd
+        alert('No ENTERING bitch');
+        
+    }
+});
+setInterval(function(){
+if (asparagus >= 2147483647) {
+  if(historyfucked === 0){
+    alert("You've done it. You've hit or surpassed the 64 bit int limit.");
+    alert("But what to do with all this asparagus?");
+    alert("Lets fuck with history.");
+  document.body.appendChild(btnhis);
+  asparagus = 0
+  }
+  else if (historyfucked === 1) {
+    alert("Im suprised you did this once more.")
+    alert("You may once again fuck with the timeline")
+    document.body.appendChild(btnhis);
+    asparagus = 0
+  }
+}
+}, 1)
+setInterval(function(){
+  asparagus = asparagus + formadd * formult + slaves
+  btncred.innerHTML = "You have " + asparagus + " Asparagus";
+}, harvesttime);
+function btnender () {
+  btncred.innerHTML = "You have " + asparagus + " Asparagus";
+  formult = multiplier + (hevmult*2)
+  formadd = addon + (hevaddon*3)
+}
+function music () {
+  const shittymus = new Audio();
+shittymus.src = 'First_song_Summer_album_alt.mp3'
+shittymus.play();
+  setInterval(function(){
+    shittymus.play();
+  }, 19000)
+}
+function upgradesfx () {
+  const USFX = new Audio();
+USFX.src = 'mixkit-explainer-video-game-alert-sweep-236.wav'
+USFX.play();
+}
+function clicksfx () {
+  const SFX = new Audio();
+  SFX.src= 'mixkit-unlock-game-notification-253.wav'
+  SFX.play();
+}
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+btncolorblue.addEventListener("click", function() {
+  document.body.style.backgroundColor = "blue";
+});
+btncolorred.addEventListener("click", function() {
+  document.body.style.backgroundColor = "red";
+});
+btncolorpink.addEventListener("click", function() {
+  document.body.style.backgroundColor = "pink";
+});
+btncolorgray.addEventListener("click", function() {
+  document.body.style.backgroundColor = "gray";
+});
+btncolorreset.addEventListener("click", function() {
+  document.body.style.backgroundColor = "white";
+});
+btnmusic.addEventListener("click", function() {
+  music();
+});
+btnpresetcomp.addEventListener("click", function() {
+  document.body.style.backgroundColor = "white";
+  btn.style.backgroundColor = "pink"
+  btncred.style.backgroundColor = "pink"
+  btnadd.style.backgroundColor = "pink"
+  btnmult.style.backgroundColor = "pink"
+  btnhevhadd.style.backgroundColor = "pink"
+  btnhevmult.style.backgroundColor = "pink"
+  btnslave.style.backgroundColor = "pink"
+  btnhevslave.style.backgroundColor = "pink"
+  btnefficency.style.backgroundColor = "pink"
+  btnsave.style.backgroundColor = "pink"
+  btnload.style.backgroundColor = "pink"
+  btnpresetcomp.style.backgroundColor = "pink"
+  btnpreset2012.style.backgroundColor = "pink"
+  btnbigshot.style.backgroundColor = "pink"
+  btnrotten.style.backgroundColor = "pink"
+  btncolorblue.style.backgroundColor = "pink"
+  btncolorgray.style.backgroundColor = "pink"
+  btncolorpink.style.backgroundColor = "pink"
+  btncolorred.style.backgroundColor = "pink"
+  btncolorreset.style.backgroundColor = "pink"
+  btnaugment.style.backgroundColor = "pink"
+  btnhat.style.backgroundColor = "pink"
+  btnmusic.style.backgroundColor = "pink"
+  btnlancer.style.backgroundColor = "pink"
+  btnroxy.style.backgroundColor= "pink"
+});
+btnpreset2012.addEventListener("click", function() {
+  document.body.style.backgroundColor = "blue";
+  btn.style.backgroundColor = "lightgreen"
+  btncred.style.backgroundColor = "lightgreen"
+  btnadd.style.backgroundColor = "lightgreen"
+  btnmult.style.backgroundColor = "lightgreen"
+  btnhevhadd.style.backgroundColor = "lightgreen"
+  btnhevmult.style.backgroundColor = "lightgreen"
+  btnslave.style.backgroundColor = "lightgreen"
+  btnhevslave.style.backgroundColor = "lightgreen"
+  btnefficency.style.backgroundColor = "lightgreen"
+  btnsave.style.backgroundColor = "lightgreen"
+  btnload.style.backgroundColor = "lightgreen"
+  btnpresetcomp.style.backgroundColor = "lightgreen"
+  btnpreset2012.style.backgroundColor = "lightgreen"
+  btnbigshot.style.backgroundColor = "lightgreen"
+  btnrotten.style.backgroundColor = "lightgreen"
+  btncolorblue.style.backgroundColor = "lightgreen"
+  btncolorgray.style.backgroundColor = "lightgreen"
+  btncolorpink.style.backgroundColor = "lightgreen"
+  btncolorred.style.backgroundColor = "lightgreen"
+  btncolorreset.style.backgroundColor = "lightgreen"
+  btnaugment.style.backgroundColor = "lightgreen"
+  btnhat.style.backgroundColor = "lightgreen"
+  btnmusic.style.backgroundColor = "lightgreen"
+  btnlancer.style.backgroundColor = "lightgreen"
+  btnroxy.style.backgroundColor= "lightgreen"
+});
+btnrotten.addEventListener("click", function() {
+  document.body.style.backgroundColor = "RebeccaPurple";
+  btn.style.backgroundColor = "red"
+  btncred.style.backgroundColor = "red"
+  btnadd.style.backgroundColor = "red"
+  btnmult.style.backgroundColor = "red"
+  btnhevhadd.style.backgroundColor = "red"
+  btnhevmult.style.backgroundColor = "red"
+  btnslave.style.backgroundColor = "red"
+  btnhevslave.style.backgroundColor = "red"
+  btnefficency.style.backgroundColor = "red"
+  btnsave.style.backgroundColor = "red"
+  btnload.style.backgroundColor = "red"
+  btnpresetcomp.style.backgroundColor = "red"
+  btnpreset2012.style.backgroundColor = "red"
+  btnbigshot.style.backgroundColor = "red"
+  btnrotten.style.backgroundColor = "red"
+  btncolorblue.style.backgroundColor = "red"
+  btncolorgray.style.backgroundColor = "red"
+  btncolorpink.style.backgroundColor = "red"
+  btncolorred.style.backgroundColor = "red"
+  btncolorreset.style.backgroundColor = "red"
+  btnaugment.style.backgroundColor = "red"
+  btnhat.style.backgroundColor = "red"
+  btnmusic.style.backgroundColor = "red"
+  btnlancer.style.backgroundColor = "red"
+  btnroxy.style.backgroundColor= "red"
+});
+btnbigshot.addEventListener("click", function() {
+  document.body.style.backgroundColor = "yellow";
+  btn.style.backgroundColor = "pink"
+  btncred.style.backgroundColor = "pink"
+  btnadd.style.backgroundColor = "pink"
+  btnmult.style.backgroundColor = "pink"
+  btnhevhadd.style.backgroundColor = "pink"
+  btnhevmult.style.backgroundColor = "pink"
+  btnslave.style.backgroundColor = "pink"
+  btnhevslave.style.backgroundColor = "pink"
+  btnefficency.style.backgroundColor = "pink"
+  btnsave.style.backgroundColor = "pink"
+  btnload.style.backgroundColor = "pink"
+  btnpresetcomp.style.backgroundColor = "pink"
+  btnpreset2012.style.backgroundColor = "pink"
+  btnbigshot.style.backgroundColor = "pink"
+  btnrotten.style.backgroundColor = "pink"
+  btncolorblue.style.backgroundColor = "pink"
+  btncolorgray.style.backgroundColor = "pink"
+  btncolorpink.style.backgroundColor = "pink"
+  btncolorred.style.backgroundColor = "pink"
+  btncolorreset.style.backgroundColor = "pink"
+  btnaugment.style.backgroundColor = "pink"
+  btnhat.style.backgroundColor = "pink"
+  btnmusic.style.backgroundColor = "pink"
+  btnlancer.style.backgroundColor = "pink"
+  btnroxy.style.backgroundColor= "pink"
+});
+btnlancer.addEventListener("click", function() {
+  document.body.style.backgroundColor = "SlateGray";
+  btn.style.backgroundColor = "DarkBlue"
+  btncred.style.backgroundColor = "DarkBlue"
+  btnadd.style.backgroundColor = "DarkBlue"
+  btnmult.style.backgroundColor = "DarkBlue"
+  btnhevhadd.style.backgroundColor = "DarkBlue"
+  btnhevmult.style.backgroundColor = "DarkBlue"
+  btnslave.style.backgroundColor = "DarkBlue"
+  btnhevslave.style.backgroundColor = "DarkBlue"
+  btnefficency.style.backgroundColor = "DarkBlue"
+  btnsave.style.backgroundColor = "DarkBlue"
+  btnload.style.backgroundColor = "DarkBlue"
+  btnpresetcomp.style.backgroundColor = "DarkBlue"
+  btnpreset2012.style.backgroundColor = "DarkBlue"
+  btnbigshot.style.backgroundColor = "DarkBlue"
+  btnrotten.style.backgroundColor = "DarkBlue"
+  btncolorblue.style.backgroundColor = "DarkBlue"
+  btncolorgray.style.backgroundColor = "DarkBlue"
+  btncolorpink.style.backgroundColor = "DarkBlue"
+  btncolorred.style.backgroundColor = "DarkBlue"
+  btncolorreset.style.backgroundColor = "DarkBlue"
+  btnaugment.style.backgroundColor = "DarkBlue"
+  btnhat.style.backgroundColor = "DarkBlue"
+  btnmusic.style.backgroundColor = "DarkBlue"
+  btnlancer.style.backgroundColor = "DarkBlue"
+  btnroxy.style.backgroundColor= "DarkBlue"
+});
+btnroxy.addEventListener("click", function() {
+  document.body.style.backgroundColor = "FireBrick";
+  btn.style.backgroundColor = "Green"
+  btncred.style.backgroundColor = "Green"
+  btnadd.style.backgroundColor = "Green"
+  btnmult.style.backgroundColor = "Green"
+  btnhevhadd.style.backgroundColor = "Green"
+  btnhevmult.style.backgroundColor = "Green"
+  btnslave.style.backgroundColor = "Green"
+  btnhevslave.style.backgroundColor = "Green"
+  btnefficency.style.backgroundColor = "Green"
+  btnsave.style.backgroundColor = "Green"
+  btnload.style.backgroundColor = "Green"
+  btnpresetcomp.style.backgroundColor = "Green"
+  btnpreset2012.style.backgroundColor = "Green"
+  btnbigshot.style.backgroundColor = "Green"
+  btnrotten.style.backgroundColor = "Green"
+  btncolorblue.style.backgroundColor = "Green"
+  btncolorgray.style.backgroundColor = "Green"
+  btncolorpink.style.backgroundColor = "Green"
+  btncolorred.style.backgroundColor = "Green"
+  btncolorreset.style.backgroundColor = "Green"
+  btnaugment.style.backgroundColor = "Green"
+  btnhat.style.backgroundColor = "Green"
+  btnmusic.style.backgroundColor = "Green"
+  btnlancer.style.backgroundColor = "Green"
+  btnroxy.style.backgroundColor= "Green"
+});
+  btnadd.addEventListener("click", function() {
+    if (asparagus >= addoncost) {
+        asparagus = asparagus - addoncost;
+        addon = addon + 1;
+        addoncost = addoncost + 400 * addon;
+        btnadd.innerHTML = "More bunches: " + addoncost
+        btnender
+        upgradesfx();
+    } else {
+        alert("You dont have enough Asparagus")
+    }
+  });
+  btnhis.addEventListener("click", function() {
+    asparagus = 1;
+              addon = 1;
+              multiplier = 1;
+              addoncost = 100;
+              hevaddon = 0;
+              hevmult = 0;
+              hevaddcost = 500;
+               hevmultcost = 10000;
+                formult = multiplier + (hevmult*2)
+                formadd = addon + (hevaddon*3)
+                multcost = 1000; //Game's variables
+                slaves = 0;
+                slavecost = 5000;
+                hevslavecost = 50000;
+                efficency = 0;
+                efficencytime = 250;
+                efficencycost = 25000;
+                harvesttime = 1000;
+                formformharv = 250*efficency;
+                formharv = harvesttime-formformharv;
+                hat = 0;
+                hatcost = 1000000000000000000
+  augment = `null`
+  augmentcost= 50000000000
+  historyfucked = historyfucked +1
+  document.body.removeChild(btnhis)
+  if(historyfucked = 1) {
+  alert("You went back to anchient egypt. now you must start from scratch once more")
+  }
+  });
+  
+  btnmult.addEventListener("click", function() {
+    if (asparagus >= multcost) {
+    asparagus = asparagus - multcost;
+    multiplier = multiplier + 1;
+    multcost = multcost + 1000 * multiplier;
+    btnmult.innerHTML = "More More bunches: " + multcost
+    btnender
+    upgradesfx();
+    } else {
+        alert("You dont have enough Asparagus")
+    
+    }
+  });
+
+  btnhevhadd.addEventListener("click", function() {
+    if (asparagus >= hevaddcost) {
+        asparagus = asparagus - hevaddcost;
+        hevaddon = hevaddon + 1;
+        hevaddcost = hevaddcost + 1600 * hevaddon;
+        btnhevhadd.innerHTML = "Better bunches: " + hevaddcost
+        btnender
+        upgradesfx();
+    } else {
+        alert("You dont have enough Asparagus")
+    }
+  });
+
+  btnhevmult.addEventListener("click", function() {
+    if (asparagus >= hevmultcost) {
+        asparagus = asparagus - hevmultcost;
+        hevmult = hevmult + 1;
+        hevmultcost = hevmultcost + 10000 * hevmult;
+        btnhevmult.innerHTML = "Bestest bunches upgrade: " + hevmultcost
+        btnender
+        upgradesfx();
+    } else {
+        alert("You dont have enough Asparagus")
+    }
+  });
+
+  btnslave.addEventListener("click", function() {
+    if (asparagus >= slavecost) {
+        asparagus = asparagus - slavecost;
+        slaves = slaves + 1;
+        slavecost = slavecost + 2500 * slaves;
+        btnslave.innerHTML = "Hire slaves: " + slavecost
+        btnender
+        upgradesfx();
+    } else {
+        alert("You dont have enough Asparagus")
+    }
+  });
+
+  btnhevslave.addEventListener("click", function() {
+    if (asparagus >= hevslavecost) {
+        asparagus = asparagus - hevslavecost;
+        slaves = slaves + 10;
+        hevslavecost = hevslavecost + 25000 * slaves;
+        btnhevslave.innerHTML = "Hire more slaves: " + hevslavecost
+        btnender
+        upgradesfx();
+    } else {
+        alert("You dont have enough Asparagus")
+    }
+  });
+
+  btnefficency.addEventListener("click", function() {
+    if (asparagus >= efficencycost) {
+        asparagus = asparagus - efficencycost;
+        efficency = efficency + 1
+        formformharv = 250*efficency;
+        formharv = 1000-formformharv;
+        efficencycost = efficencycost + 50000 * efficency;
+        btnefficency.innerHTML = "Faster slaves: " + efficencycost;
+        if (efficency === caps) {
+          efficencycost = Infinity
+          btnefficency.innerHTML = "Faster slaves: Maxed out"
+        }
+
+        setInterval(function(){
+          asparagus = asparagus + formadd * formult
+          btncred.innerHTML = "You have " + asparagus + " Asparagus";
+        },harvesttime);
+        btnender
+        upgradesfx
+    } else {
+        alert("You dont have enough Asparagus")
+    }
+  });
+  btnhat.addEventListener("click", function() {
+    if(hat < 1) {
+    if (asparagus >= hatcost) {
+        asparagus = asparagus - hatcost;
+        hat = hat + 1;
+        btnender
+        upgradesfx();
+
+    } else {
+        alert("You dont have enough Asparagus")
+    }
+  }
+  else {
+    alert ("You HAVE this.")
+  }
+  });
+  btnaugment.addEventListener("click", function() {
+    if(hat > 0) {
+      if (asparagus >= augmentcost) {
+        asparagus = asparagus - augmentcost;
+        let augmentrandom = getRandomInt(4)
+        if (augmentrandom == 0) {
+        if(augment == `STEROIDS`) {
+          alert("You already HAVE this.")
+        }
+        else{ addon = addon+10
+          multiplier = multiplier + 100
+          alert("You feel your hands become stronger with the new STEROIDS augment!")
+          augment = 'STEROIDS'
+        }}
+        if (augmentrandom == 1) {
+          if (augment = `SLAVERY`) {
+            alert("You already HAVE this.")
+          }
+          else{
+          harvesttime = 0
+          slaves= slaves+2000
+          alert("You feel more power over your slaves with the new SLAVERY augment!")
+          augment = `SLAVERY`
+        }}
+        if (augmentrandom == 2) {
+          if (augment = `SALESMAN`) {
+            alert("You already HAVE this.")
+          }
+          addoncost = 100
+          multcost = 1000
+          alert("You feel more charismatic with the new SALESMAN augment!")
+          augment = `SALESMAN`
+        }
+        if (augmentrandom == 3) {
+          if (augment == `GENERAL`) {
+            alert("You already HAVE this.")
+          }
+          addon = addon + 5
+          multiplier = multiplier + 50
+          harvesttime = 0.5
+          slaves = slaves + 1000 
+          alert("You feel better all around with the new GENERAL augment!")
+          augment = `GENERAL`
+        }
+        let augmentincrece = 1
+        augmentcost = augmentcost + 5000*augmentincrece;
+        augmentincrece=augmentincrece + 1
+        btnaugment.innerHTML = "New gemstone: " + augmentcost
+        btnender
+        upgradesfx();
+    } else {
+        alert("You dont have enough Asparagus")
+    }
+    }
+    else{
+      alert("You cant use this yet")
+    }
+  })
+  btnsave.addEventListener("click", function() {
+    localStorage.setItem('asparagus',asparagus);
+    localStorage.setItem('addon', addon);
+    localStorage.setItem('multiplier', multiplier);
+    localStorage.setItem('hevaddon', hevaddon);
+    localStorage.setItem('hevmult', hevmult);
+    localStorage.setItem('slaves', slaves);
+    localStorage.setItem('addoncost', addoncost)
+    localStorage.setItem('hevaddcost', hevaddcost)
+    localStorage.setItem('hevmultcost', hevmultcost)
+    localStorage.setItem('multcost', multcost)
+    localStorage.setItem('slavecost', slavecost)
+    localStorage.setItem('efficencycost', efficencycost)
+    localStorage.setItem('efficincy', efficency)
+    localStorage.setItem('augment', augment)
+    localStorage.setItem('augmentcost', augmentcost)
+    
+  });
+
+  btnload.addEventListener("click", function() {
+    let trueasper = parseInt(localStorage.getItem('asparagus'))
+    let trueadd = parseInt(localStorage.getItem('addon'))
+    let truehevadd = parseInt(localStorage.getItem('hevaddon'))
+    let truehevmult = parseInt(localStorage.getItem('hevmult'))
+    let truemult = parseInt(localStorage.getItem('multiplier'))
+    let trueslaves = parseInt(localStorage.getItem('slaves'))
+    let trueefficency = parseInt(localStorage.getItem('efficincy'))
+    let trueaddoncost = parseInt(localStorage.getItem('addoncost'))
+    let truemultcost = parseInt(localStorage.getItem('multcost'))
+    let truehevmultcost = parseInt(localStorage.getItem('hevmultcost'))
+    let truehevaddcost = parseInt(localStorage.getItem('hevaddcost'))
+    let trueefficencycost = parseInt(localStorage.getItem('efficencycost'))
+    let trueslavecost = parseInt(localStorage.getItem('slavecost'))
+    let trueaugmentcost = parseInt(localStorage.getItem('augmentcost'))
+    let trueaugment = localStorage.getItem('augment')
+    asparagus = trueasper
+    addon = trueadd
+    hevaddon = truehevadd
+    hevmult = truehevmult
+    slaves = trueslaves
+    multiplier = truemult
+    efficency = trueefficency
+    efficencycost = trueefficencycost
+    addoncost = trueaddoncost
+    multcost - truemultcost
+    hevmultcost = truehevmultcost
+    hevaddcost = truehevaddcost
+    slavecost = trueslavecost
+    formult = multiplier + (hevmult*2)
+    formadd = addon + (hevaddon*3)
+    btncred.innerHTML = "You have " + asparagus + " Asparagus";
+    btnhevslave.innerHTML = "Hire more slaves: " + hevslavecost
+    btnhevmult.innerHTML = "Bestest bunches upgrade: " + hevmultcost
+    btnslave.innerHTML = "Hire slaves: " + slavecost
+    btnhevhadd.innerHTML = "Better bunches: " + hevaddcost
+    btnmult.innerHTML = "More More upgrade: " + multcost
+    btnadd.innerHTML = "More bunches: " + addoncost
+    btnefficency.innerHTML = "Faster slaves: " + efficencycost
+    augment = trueaugment
+    augmentcost = trueaugmentcost
+  });
+
+  btn.addEventListener("click", function() {
+    asparagus = asparagus + formadd * formult
+    btncred.innerHTML = "You have " + asparagus + " Asparagus";
+    formult = multiplier + (hevmult*2)
+    formadd = addon + (hevaddon*3)
+    clicksfx()
+  });
+
+  
+  
+  document.body.appendChild(btn);
+  document.write('<br /><br />')
+  document.body.appendChild(btncred);
+  document.write('    ')
+  document.body.appendChild(btnadd);
+  document.write('    ')
+  document.body.appendChild(btnmult);
+  document.write('<br /><br />')
+  document.body.appendChild(btnhevhadd);
+  document.write('    ')
+  document.body.appendChild(btnhevmult);
+  document.write('<br /><br />')
+  document.body.appendChild(btnslave);
+  document.write('    ')
+  document.body.appendChild(btnhevslave);
+  document.write('<br /><br />')
+  document.body.appendChild(btnefficency)
+  document.write('<br /><br />')
+  document.body.appendChild (btnhat)
+  document.write('<br /><br />')
+  document.body.appendChild(btnaugment)
+  document.write('<br /><br />')
+  document.body.appendChild(btnsave);
+  document.body.appendChild(btnload);
+  document.write('<br /><br />')
+  document.write('<br /><br />')
+btncred.innerHTML = "Who made this? (SAVE BEFORE CLICKING)";
+btncred.addEventListener("click", function () {
+  document.write("Music by AJ Mark" + "<br>" + "Programmer: Wyatt tucker and a small bit of support from michal.codes and major support from MMM and cleverdumb on discord" + "<br>" + "Concepts by Brinley Griffith-Fharni, Levi Pence, Chad canter, Miles fornash and Kathryn Kreitzer" + "<br>"+ "Beta testing by Gabriel dearman, Caden seitz, Gabriel pike, Jacob zellers and Max Wackerly"); //credits
+});
+document.body.appendChild(btncred);
+document.write("<br>")
+document.write("Colors")
+  document.write('<br /><br />')
+  document.body.appendChild(btncolorblue)
+  document.body.appendChild(btncolorgray)
+  document.body.appendChild(btncolorpink)
+  document.body.appendChild(btncolorred)
+  document.body.appendChild(btncolorreset)
+  document.write('<br /><br />')
+  document.write('Presets')
+  document.write('<br /><br />')
+  document.body.appendChild(btnpresetcomp)
+  document.body.appendChild(btnpreset2012)
+  document.body.appendChild(btnrotten)
+  document.body.appendChild(btnbigshot)
+  document.body.appendChild(btnlancer)
+  document.body.appendChild(btnroxy)
+  document.write('<br /><br />')
+  document.write('Music')
+  document.write('<br /><br />')
+  document.body.appendChild(btnmusic)
+
+
+        </script>
+
+    </body>
+
+</html>
