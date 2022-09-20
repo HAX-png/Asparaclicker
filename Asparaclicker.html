@@ -33,9 +33,7 @@
               let augment = `null`
               let augmentcost= 50000000
               let historyfucked = 0
-        
               const caps = 2
-
   document.write("32 bit int limit is 2,147,483,647, good luck!"+"<br>" + "Ver 9.5.1" + "<br>");
   let btn = document.createElement("button");
   let btncred = document.createElement("button");
@@ -143,11 +141,7 @@ function clicksfx () {
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
-function imagerenderer() {
-  var image = new Image
-  image.src ='Post-trans.png' 
-  document.body.appendChild(image)
-}
+
 btncolorblue.addEventListener("click", function() {
   document.body.style.backgroundColor = "blue";
 });
@@ -430,7 +424,14 @@ btnroxy.addEventListener("click", function() {
         alert("You dont have enough Asparagus")
     }
   });
-
+              function imgtobutton() {
+              asparagus = asparagus + formadd * formult
+    btncred.innerHTML = "You have " + asparagus + " Asparagus";
+    formult = multiplier + (hevmult*2)
+    formadd = addon + (hevaddon*3)
+    clicksfx()  
+              }
+<img id="Img" src="Post-trans.png" onclick=imgtobutton />
   btnhevslave.addEventListener("click", function() {
     if (asparagus >= hevslavecost) {
         asparagus = asparagus - hevslavecost;
@@ -613,7 +614,7 @@ btnroxy.addEventListener("click", function() {
 
   
   
-  document.body.appendChild(btn);
+  document.body.appendChild(img);
   document.write('<br /><br />')
   imagerenderer();
   document.write('<br /><br />')
