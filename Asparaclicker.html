@@ -143,6 +143,11 @@ function clicksfx () {
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
+function imagerenderer() {
+  var image = new Image
+  image.src ='Post-trans.png' 
+  document.body.appendChild(image)
+}
 btncolorblue.addEventListener("click", function() {
   document.body.style.backgroundColor = "blue";
 });
@@ -610,6 +615,7 @@ btnroxy.addEventListener("click", function() {
   
   document.body.appendChild(btn);
   document.write('<br /><br />')
+  imagerenderer();
   document.body.appendChild(btncred);
   document.write('    ')
   document.body.appendChild(btnadd);
