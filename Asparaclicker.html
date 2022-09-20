@@ -424,14 +424,15 @@ btnroxy.addEventListener("click", function() {
         alert("You dont have enough Asparagus")
     }
   });
-              function imgtobutton() {
+  function imgtobutton() {
               asparagus = asparagus + formadd * formult
     btncred.innerHTML = "You have " + asparagus + " Asparagus";
     formult = multiplier + (hevmult*2)
     formadd = addon + (hevaddon*3)
     clicksfx()  
               }
-<img id="Img" src="Post-trans.png" onclick=imgtobutton />
+  <img id="Img" src="Post-trans.png" onclick=imgtobutton />
+
   btnhevslave.addEventListener("click", function() {
     if (asparagus >= hevslavecost) {
         asparagus = asparagus - hevslavecost;
@@ -604,17 +605,9 @@ btnroxy.addEventListener("click", function() {
     augmentcost = trueaugmentcost
   });
 
-  btn.addEventListener("click", function() {
-    asparagus = asparagus + formadd * formult
-    btncred.innerHTML = "You have " + asparagus + " Asparagus";
-    formult = multiplier + (hevmult*2)
-    formadd = addon + (hevaddon*3)
-    clicksfx()
-  });
-
   
   
-  document.body.appendChild(img);
+  document.body.appendChild(Img);
   document.write('<br /><br />')
   document.body.appendChild(btncred);
   document.write('    ')
